@@ -1,0 +1,9 @@
+iface = gr.Interface(
+    fn=detect_cyberbullying,                # 1
+    inputs=gr.Textbox(lines=3, placeholder="Enter a sentence..."),  # 2
+    outputs=gr.HTML(),                       # 3
+    title="🚨 Cyberbullying Detection System", # 4
+    description="Enter a sentence to detect cyberbullying, view confidence score, model accuracy, and AI explanation."  # 5
+)
+
+iface.launch()  # 6
